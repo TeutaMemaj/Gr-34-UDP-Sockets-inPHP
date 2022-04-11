@@ -8,8 +8,6 @@ if(!($sock = socket_create(AF_INET, SOCK_DGRAM, 0 )))
 {
     $ERRORCODE = socket_last_error();
     $errormsg = socket_strerror($errorcode);
-}
-
 
 
 die("Couldn't create socket: [$errorcode] $errormsg \n");
