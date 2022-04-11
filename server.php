@@ -1,4 +1,22 @@
 
+
+die("Couldn't create socket: [$errorcode] $errormsg \n");
+
+}
+
+echo "Socket created \n";
+
+
+if( !socket_bind($sock, "0.0.0.0" , 9999))
+{
+    $errorcode = socket_last_error();
+    $errormsg = socket_strerror($errorcode);
+
+
+    die("Could not bind socket : [$errorcode] $errormsg \n");
+    
+}
+
 while(1)
 {
 	echo "Waiting for data ... \n";
