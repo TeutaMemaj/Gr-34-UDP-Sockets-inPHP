@@ -7,7 +7,7 @@ error_reporting(~E_WARNING);
 
 
 $ERRORCODE = socket_last_error();
-$errormsg = socket_strerror($errorcode;)
+$errormsg = socket_strerror($errorcode);
  }
 
 die("Couldn't create socket: [$errorcode] $errormsg \n");
