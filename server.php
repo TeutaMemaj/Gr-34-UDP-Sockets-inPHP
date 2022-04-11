@@ -2,11 +2,11 @@
 
 error_reporting(~E_WARNING);
  
- if(!($sock=socket_create(AF_INET,SOCK_DGRAM, 0)))
+ if(!($sock = socket_create(AF_INET,SOCK_DGRAM, 0)))
  {
 
 
-$ERRORCODE = socket_last_error();
+$errorcode = socket_last_error();
 $errormsg = socket_strerror($errorcode);
  }
 
