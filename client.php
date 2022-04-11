@@ -6,7 +6,7 @@ if( ! socket_sendto($sock, $input , strlen($input) , 0 , $server , $port))
 		die("Could not send data: [$errorcode] $errormsg \n");
 	}
 		
-	//Now receive reply from server and print it
+	//Prani pergjigjje nga serveri dhe printoje
 	if(socket_recv ( $sock , $reply , 2045 , MSG_WAITALL ) === FALSE)
 	{
 		$errorcode = socket_last_error();

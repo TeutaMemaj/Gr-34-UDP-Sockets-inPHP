@@ -3,7 +3,7 @@ while(1)
 {
 	echo "Waiting for data ... \n";
 	
-	//Receive some data
+	//Prano disa informata 
 	$r = socket_recvfrom($sock, $buf, 512, 0, $remote_ip, $remote_port);
 	echo "$remote_ip : $remote_port -- " . $buf;
 	
